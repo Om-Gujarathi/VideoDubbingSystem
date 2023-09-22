@@ -14,16 +14,16 @@ function VideoUpload() {
         alert('Please select a video file.');
         return;
       }
-
+  
       const formData = new FormData();
       formData.append('video', selectedFile);
-
-      // Send a POST request to your backend API
-      const response = await fetch('/api/upload-video', {
+  
+      // Update the URL to match your Flask server's endpoint
+      const response = await fetch('http://localhost:5000/upload/hindi', {
         method: 'POST',
         body: formData,
       });
-
+  
       if (response.ok) {
         alert('Video uploaded successfully.');
       } else {
@@ -33,6 +33,7 @@ function VideoUpload() {
       console.error('Error uploading video:', error);
     }
   };
+  
 
   return (
     <div>
