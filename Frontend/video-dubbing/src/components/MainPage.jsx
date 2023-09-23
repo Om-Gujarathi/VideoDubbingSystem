@@ -1,6 +1,4 @@
-import React from "react";
 import Navbar from "./Navbar";
-import FileInput from "./FileInput";
 import OptionCard from "./OptionCard";
 import VideoUpload from "./VideoUpload";
 
@@ -13,8 +11,8 @@ const MainPage = () => {
       </div>
 
       <OptionCard title ="Video to Audio" />
-      <OptionCard title ="Translated Subtitles" />
       <OptionCard title ="Video Subtitles" />
+      <OptionCard title ="Translated Subtitles" />
       <OptionCard title ="Dub a Video" />
     </div>
   );
