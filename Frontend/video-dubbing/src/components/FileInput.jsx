@@ -18,19 +18,20 @@ function FileInput() {
   };
 
   return (
-    <div>
-      <input
+    <div >
+      <input 
+        className="myFont"
         type="file"
         accept="video/*"
         onChange={handleFileChange}
         style={{ display: 'none' }}
         ref={(fileInput) => (this.fileInput = fileInput)}
       />
-      <button className="bg-indigo-500 rounded-[20px] font-sans " onClick={() => this.fileInput.click()}>Choose File</button>
+      <button className="myFont buttonStyle bg-gradient-to-r from-violet-500 to-indigo-500" onClick={() => this.fileInput.click()}>Choose File</button>
       {selectedFile && (
         <div>
-          <p>Selected Video: {selectedFile.name}</p>
-          <p>File Type: {selectedFile.type}</p>
+          <p className="myFont" >Selected Video: {selectedFile.name}</p>
+          <p className="myFont" >File Type: {selectedFile.type}</p>
           <button onClick={handleUpload}>Start Dubbing</button>
         </div>
       )}

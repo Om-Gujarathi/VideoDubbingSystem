@@ -4,7 +4,7 @@ import dubWizLogo from '../assests/dubWizLogo.png'
 const Navbar = () => {
   return (
     <div>
-    <nav className=" bg-violet-600 p-4">
+    <nav className=" bg-violet-600 p-1">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="text-white text-2xl font-bold">
@@ -13,8 +13,8 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <ul className="flex  justify-end space-x-6">
-          <li><a href="#" className="text-white">Home</a></li>
-          <li><a href="#" className="text-white">My Projects</a></li>
+          <li><a href="#" className="text-white myFont font-semibold text-base">Home</a></li>
+          <li><a href="#" className="text-white myFont font-semibold text-base">My Projects</a></li>
         </ul>
 
         {/* Auth Buttons */}

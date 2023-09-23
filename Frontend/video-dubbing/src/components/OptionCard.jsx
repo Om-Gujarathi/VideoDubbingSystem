@@ -25,8 +25,8 @@ const OptionCard = (props) => {
     <div className="flex justify-center">
     <div className="boxStyle w-[767px] h-[261px] justify-center relative ">
       <img class="w-[73px] h-[57px] rounded-[5px]  m-5" src={playButton} />
-      <h1 className="cardText p-10">{props.title}</h1>
-      <select className="hover:bg-violet-400 active:bg-violet-400 rounded-md mx-20" value={selectedLanguage} onChange={handleLanguageChange}>
+      <h1 className="myFont text-xl font-bold cardText p-10">{props.title}</h1>
+      <select className="hover:bg-violet-400 active:bg-violet-400 rounded-md mx-20 " value={selectedLanguage} onChange={handleLanguageChange}>
         {languageOptions.map((option) => (
           <option key={option.value} value={option.value}>
             {option.label}
